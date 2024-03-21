@@ -11,7 +11,7 @@ function Page2() {
     useEffect(() => {
         ;(async () => {
             try {
-                const response = await axios.get("/api/showCodes");
+                const response = await axios.get("https://takeuforward-r2kt.onrender.com/api/showCodes");
                 setCodes(response.data.data);
             } catch (e) {
                 console.log(e)

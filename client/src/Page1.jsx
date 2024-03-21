@@ -12,7 +12,7 @@ function Page1() {
         console.log(data);
         try {
             data.time = (new Date()).toISOString('en').slice(0, 19).replace('T', " ");
-            await axios.post("/api/uploadCode", data);
+            await axios.post("https://takeuforward-r2kt.onrender.com/api/uploadCode", data);
             navigate("/page2");
         } catch (e) {
             console.log(e)
