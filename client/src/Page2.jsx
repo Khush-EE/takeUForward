@@ -62,7 +62,7 @@ function Page2() {
                 <td className='p-3 border-l-[1px] border-gray-500'>{code.username}</td>
                 <td className='p-3 border-l-[1px] border-gray-500'>{code.language}</td>
                 <td className='p-3 border-l-[1px] border-gray-500'>{code.stdin}</td>
-                <td className='p-3 border-l-[1px] border-gray-500'>{textClip(code.code)}</td>
+                <td className='p-3 border-l-[1px] border-gray-500 whitespace-pre-wrap'>{textClip(code.code)}</td>
             </tr>)
         }
             </tbody>
